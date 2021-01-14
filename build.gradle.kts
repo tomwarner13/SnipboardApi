@@ -11,6 +11,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application.
     application
     id("org.springframework.boot") version "2.4.1"
+    id("io.spring.dependency-management") version "1.0.10.RELEASE"
     kotlin("jvm") version "1.4.21"
     kotlin("plugin.spring") version "1.4.21"
     kotlin("plugin.jpa") version "1.4.21"
@@ -20,6 +21,7 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
