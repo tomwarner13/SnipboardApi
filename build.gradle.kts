@@ -41,9 +41,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.h2database:h2")
+
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.1.51")
 }
 
 application {
     // Define the main class for the application.
-    mainClassName = "DocApi.AppKt"
+    mainClassName = "snipboardApi.AppKt"
 }
