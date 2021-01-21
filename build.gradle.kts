@@ -42,7 +42,18 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.h2database:h2")
 
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.1.51")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+
+    //security stuff
+    // okta's helpful spring boot starter
+    implementation("com.okta.spring:okta-spring-boot-starter:2.0.0")
+    // spring boot security
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation ("org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.3.6.RELEASE")
+    // for spring boot testing
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 application {
